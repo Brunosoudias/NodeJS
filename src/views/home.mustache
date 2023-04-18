@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Págima Home</title>
+  </head>
+  <body>
+    <h1>Título da Pagina</h1>
+    <hr />
+    
+    Opa, {{name}} {{lastName}}, tudo bem ?  
+    {{#showOld}}
+      Como vai a vida ?
+    {{/showOld}}
+
+    <hr />
+
+    <h2>Produtos</h2>
+    
+    <ul>
+      {{#products}}
+        <li>{{ title }} - R$ {{ price }}</li>
+      {{/products}}
+    </ul>
+  </body>
+</html>
